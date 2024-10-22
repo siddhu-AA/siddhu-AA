@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+void main()
 {
   int a,b,m,lcm;
   printf(" enter two positive integers:");
