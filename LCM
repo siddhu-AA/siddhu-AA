@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+  int a,b,m,lcm;
+  printf(" enter two positive integers:");
+  scanf("%d %d",&a,&b);
+  m= (a>b) ? a:b;
+  lcm = m;
+  while ((lcm % a !=0) || (lcm % b !=0)) {
+      lcm +=m;
+  }
+  printf("The LCM of %d and %d is %d.",a,b,lcm);
+}    
