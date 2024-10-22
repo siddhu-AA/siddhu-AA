@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main()
+{
+   int a=100;
+   printf("enter any number :");
+   scanf("%d",&a);
+   printf("Factor of %d  are : ",a);
+   for(int i=2;i<=a; i++)
+   {
+     if(a%i ==0)
+       printf(" %d",i);
+   }
+}
