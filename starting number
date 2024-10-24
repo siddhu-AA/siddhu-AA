@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter a starting number (100-999): ");
+    scanf("%d", &a);
+
+  
+    if (a < 100 || a > 999) {
+        printf("Please enter a number between 100 and 999.\n");
+        return 1; 
+    }
+
+    for (int i = a; i <= 999; i++)
+    {
+      
+        if (i % 3 == 0 || i % 4 == 0 || i % 5 == 0 || i % 10 == 0)
+            continue;
+        printf("%d\n", i);      
+    }
+
+}
