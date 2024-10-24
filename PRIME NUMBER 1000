@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void main()
+{
+   int c;
+   for(int i=2;i<=1000;i++)
+   {
+       c=0;
+       for(int j=2;j<i;j++)
+       {
+           if(i%j==0)
+           c=c+1;
+       }
+       if(c==0)
+       {
+           printf("\n %d",i);
+       }
+   }
+}
