@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_LENGTH 100
+
+int main() {
+    char password1[MAX_LENGTH];
+    char password2[MAX_LENGTH];
+
+   
+    printf("Enter your password: ");
+    fgets(password1, MAX_LENGTH, stdin);
+   
+    password1[strcspn(password1, "\n")] = 0;
+
+   
+    printf("Confirm your password: ");
+    fgets(password2, MAX_LENGTH, stdin);
+    
+    password2[strcspn(password2, "\n")] = 0;
+
+    
+    if (strcmp(password1, password2) == 0) {
+        printf("Passwords match.\n");
+    } else {
+        printf("Passwords do not match.\n");
+    }
+
+    return 0;
+}
