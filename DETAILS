@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct sist
+{
+    char Name;
+    int Regno;
+    double mark;
+}s[20];
+int main()
+{
+    struct sist;
+    for(int i=0;i<20;i++)
+    {
+        printf("enter the name%d",i+1);
+        scanf("%s",&s[i].Name);
+        printf("enter the Regno%d",i+1);
+        scanf("%d",&s[i].Regno);
+        printf("enter the mark%d",i+1);
+        scanf("%.1lf",&s[i].mark);
+    }
+return 0;    
+}
