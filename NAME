@@ -1,0 +1,32 @@
+#include<stdio.h>
+struct sist
+{
+    char Name[20];
+    int Regno;
+    double mark;
+}s[3];
+int main()
+{
+    int n;
+    struct sist s[3];
+    for(int i=0;i<3;i++)
+    {
+        printf("\nenter the name%d",i+1);
+        scanf("%s",&s[i].Name);
+        printf("\nenter the Regno%d",i+1);
+        scanf("%d",&s[i].Regno);
+        printf("\nenter the mark%d",i+1);
+        scanf("%lf",&s[i].mark);
+    }
+    printf("enter the reg no. you want to search");
+    scanf("%d",&n);
+    for(int i=0;i<3;i++)
+    {
+        if(s[i].Regno==n)
+        {
+        printf("%s",s[i].Name);
+        scanf("%.11f",s[i].mark);
+        }
+    }
+return 0;    
+}
